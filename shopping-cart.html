@@ -8,7 +8,7 @@
     <title>Imaji Shop</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Scrollbar Custom CSS -->
@@ -44,7 +44,7 @@
                     </div>
                 </form>
                 <li class="active">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Categories</a>
@@ -53,15 +53,15 @@
                             <a href="category.html">Sayur</a>
                         </li>
                         <li>
-                            <a href="#">Buah</a>
+                            <a href="category.html">Buah</a>
                         </li>
                         <li>
-                            <a href="#">Daging</a>
+                            <a href="category.html">Daging</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Cara Berbelanja</a>
+                    <a href="cara-belanja.html">Cara Berbelanja</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact Us</a>
@@ -112,7 +112,7 @@
                     <div class="col-sm-12 col-md-6 order-1 order-md-2">
                         <nav aria-label="breadcrumb" class="">
                             <ol class="breadcrumb float-right px-0 button_breadcrumb">
-                                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
                             </ol>
                         </nav>
@@ -213,37 +213,57 @@
                                                     <div class="card-body">
                                                         <div class="form-group">
                                                             <h6>Metode Pembayaran</h6>
-                                                            <div class="form-check py-auto">
-                                                                <input class="form-check-input py-auto" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                                                <label class="form-check-label" for="exampleRadios1">
-                                                                  <img class="w-25" src="https://1.bp.blogspot.com/-vwc4zghxsfc/V1KXUPGeMmI/AAAAAAAABQA/aPwD93b-aQ0ibhCeybKVPenwX0L7-RFuACLcB/s1600/mandiri-clickpay.png" alt="">
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                                <label class="form-check-label" for="exampleRadios2">
-                                                                    Second default radio
-                                                                </label>
+                                                            <div class="form__group text-nowrap">
+                                                                <div class="form__radio--group">
+                                                                    <input type="radio" id="klikBca" name="metode_bayar" required class="form__radio--input" hidden>
+                                                                    <label for="klikBca" class="form__radio--label">
+                                                                        <span class="form__radio--button"></span>
+                                                                        <img style="width: 80px;" src="https://lh3.googleusercontent.com/proxy/HBpGE9pvSdiHoWs0JlxxI3X4uxjuCXD40kQB1lkzJjf_zrZ8a9N5-JxjFuAAzOJSy6jRAL9_k4UYx1okIbuTVsHPfJDfTpl8Pw" alt="">
+                                                                        <span class="ml-2">KlikBCA</span>
+                                                                    </label>
+                                                                </div>
+                                                                <br>
+                                                                <div class="form__radio--group">
+                                                                    <input type="radio" id="mandiriClickPay" name="metode_bayar" required class="form__radio--input" hidden>
+                                                                    <label for="mandiriClickPay" class="form__radio--label">
+                                                                        <span class="form__radio--button"></span>
+                                                                        <img style="width: 80px;" src="https://1.bp.blogspot.com/-vwc4zghxsfc/V1KXUPGeMmI/AAAAAAAABQA/aPwD93b-aQ0ibhCeybKVPenwX0L7-RFuACLcB/s1600/mandiri-clickpay.png" alt="">
+                                                                        <span class="ml-2">Mandiri Clickpay</span>
+                                                                    </label>
+                                                                </div>
+                                                                <br>
+                                                                <div class="form__radio--group">
+                                                                    <input type="radio" id="mandiriEcash" name="metode_bayar" required class="form__radio--input" hidden>
+                                                                    <label for="mandiriEcash" class="form__radio--label">
+                                                                        <span class="form__radio--button"></span>
+                                                                        <img style="width: 80px;" src="https://cdn.sindonews.net/dyn/620/content/2015/02/21/34/967162/ini-syarat-jadi-agen-mandiri-e-cash-Qjo-thumb.jpg" alt="">
+                                                                        <span class="ml-2">Mandiri e-cash</span>
+                                                                    </label>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <hr>
                                                         <h6>Ringkasan Pembayaran</h6>
-                                                        <div class="d-block clearfix">
+                                                        <div class="clearfix pb-0 mb-0">
                                                             <p class="float-left">Total Tagihan</p>
                                                             <p class="float-right">Rp 800.000</p>
                                                         </div>
-                                                        <div class="clearfix d-block">
-                                                            <p class="clearfix float-left">Biaya Layanan</p>
+                                                        <div class="clearfix">
+                                                            <p class="float-left">Biaya Layanan</p>
                                                             <p class="float-right">Rp 100.000</p>
                                                         </div>
                                                         <hr>
-                                                        <div>
-                                                            <div class="float-left">
-                                                                <p>Total Bayar</p>
-                                                                <p>Rp 900.000</p>
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="float-left">
+                                                                    <p class="pb-0 mb-0">Total Bayar</p>
+                                                                    <p>Rp 900.000</p>
+                                                                </div>
                                                             </div>
-                                                            <div class="float-right">
-                                                                <button type="button" style="vertical-align: middle !important;" class="btn btn-outline-success button_pay">Bayar</button>
+                                                            <div class="col-6" style="margin-top: 10px;">
+                                                                <div class="float-right align-middle">
+                                                                    <button type="submit" class="btn btn-success button_pay">Bayar</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -262,12 +282,9 @@
 
     <div class="overlay"></div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/bootstrap-select.js"></script>
