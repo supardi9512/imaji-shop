@@ -348,7 +348,7 @@ a.register:hover {
 
 #content {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0 0 0;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
@@ -826,4 +826,17 @@ a.register:hover {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
   opacity: 0; 
+}
+
+footer.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #e5e5e5;
+  display: block;
+  background-color: #28a745 !important;
+}
+
+footer.footer p {
+  color: #fff !important;
+  margin: 0;
 }
